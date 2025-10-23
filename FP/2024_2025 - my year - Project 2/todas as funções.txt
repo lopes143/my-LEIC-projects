@@ -1,0 +1,68 @@
+TAD Posição (1,5 v)
+
+  # cria_posicao            - Devolve uma posição com as coordenadas dadas
+  # obtem_pos_col           - Devolve a coluna da posição
+  # obtem_pos_lin           - Devolve a linha da posição
+  # eh_posicao              - Verifica se o argumento é uma posição
+  # posicoes_iguais         - Verifica se duas posições são iguais
+  # posicao_para_str        - Devolve uma string com a posição
+  # str_para_posicao        - Devolve a posição correspondente à string
+
+  -ALTO NÍVEL-
+  # eh_posicao_valida       - Verifica se a posição é válida para o tabuleiro dado
+  # obtem_posicoes_jogador  - Devolve as posições de um jogador
+  # ordena_posicoes         - Ordena um conjunto de posições
+  
+TAD Pedra (1,5 v)
+
+  # cria_pedra_branca                - Devolve uma pedra branca
+  # cria_pedra_preta                 - Devolve uma pedra preta
+  # cria_pedra_neutra                - Devolve uma pedra neutra
+  # eh_pedra                         - Verifica se o argumento é uma pedra
+  # eh_pedra_branca                  - Verifica se a pedra é branca
+  # eh_pedra_preta                   - Verifica se a pedra é preta
+  # eh_pedras_iguais                 - Verifica se duas pedras são iguais
+  # pedra_para_str                   - Devolve uma string com a pedra
+
+  -ALTO NÍVEL-
+  # eh_pedra_jogador                 - Verifica se a pedra é de um jogador
+  # pedra_para_int                   - Devolve um inteiro correspondente à pedra
+  
+TAD tabuleiro (4,0 v)
+
+  # cria_tabuleiro_vazio             - Devolve um tabuleiro vazio
+  # cria_tabuleiro                   - Devolve um tabuleiro com as pedras dadas
+  # cria_copia_tabuleiro             - Devolve uma cópia do tabuleiro
+  # obtem_numero_orbitas             - Devolve o número de órbitas do tabuleiro
+  # obtem_pedra                      - Devolve a pedra de uma posição
+  # obtem_linha_horizontal           - Devolve uma linha horizontal do tabuleiro
+  # obtem_linha_vertical             - Devolve uma linha vertical do tabuleiro
+  # obtem_linhas_diagonais           - Devolve as linhas diagonais do tabuleiro
+  # obtem_posicoes_pedra             - Devolve as todas as posições de uma pedra
+  # coloca_pedra                     - Coloca destrutivamente uma pedra no tabuleiro
+  # remove_pedra                     - Remove destrutivamente uma pedra do tabuleiro
+  # eh_tabuleiro                     - Verifica se o argumento é um tabuleiro
+  # tabuleiros_iguais                - Verifica se dois tabuleiros são iguais
+  # tabuleiro_para_str               - Devolve uma string com o tabuleiro
+
+  -ALTO NÍVEL-
+  # move_pedra                       - Move destrutivamente uma pedra no tabuleiro
+  # obtem_posicao_seguinte           - Devolve a posição seguinte a uma dada posição
+  # roda_tabuleiro                   - Roda destrutivamente o tabuleiro
+  # verifica_linha_pedras            - Verifica se existe uam sequência de pedras numa linha
+  
+Funções adicionais (ALTO NÍVEL)
+  # eh_vencedor (0,5 v)              - Verifica se um jogador venceu
+  # eh_fim_jogo (0,5 v)              - Verifica se o jogo terminou
+  # escolhe_movimento_manual (1,0 v) - Escolhe um movimento manual
+  - escolhe_movimento_auto (1,5 v)   - Escolhe um movimento do computador
+  - orbito (1,5 v)                   - Função principal do jogo
+  
+Pesos:
+       12 v - Testes pytest
+        4 v - Barreiras da abstração
+        
+      1,5 v - Boas práticas
+        1 v - Comentários/Docstrings
+        1 v - Tamanho funções/abstração procedimental
+      0,5 v - Escolha de nomes
