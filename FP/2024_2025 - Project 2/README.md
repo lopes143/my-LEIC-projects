@@ -3,9 +3,9 @@
 ### Files Included:
 
 - Project Files
-    - `FP2425P2.py` - project
+    - `FP2425P2.py` - Project
     - `FP2425P2_revers.py` - Pratical test version
-    - `FP2425P2_sol.py` - teacher's project solution
+    - `FP2425P2_sol.py` - Teacher's project solution
 
 - Tests
     - `test_public.py` - Public tests (available during project development)
